@@ -82,11 +82,33 @@ const Roadmap = () => {
             ))}
           </div>
         </div>
-        <div className="text-[#242424] bg-[#EBEAE6] px-10 py-16 text-center text-medium">
-          <p>Become a supporter and help us on our Journey </p>
-          <button className="bg-[#F1FF66] rounded-md cursor-pointer hover:bg-[#52580d] px-10 py-4 m-10 text-medium">
+        <div className="text-[#242424] bg-[#EBEAE6] px-10 py-16 text-center text-xl font-bold">
+          <p>Become a supporter and help us on our Journey</p>
+          <button className="border border-black-300 rounded-md cursor-pointer hover:bg-[#eaebda] px-10 py-4 m-10 text-sm">
             Read more about how to →
           </button>
+        </div>
+        <div className="flex justify-between items-center bg-[#F1FF66] px-8 py-4">
+          <div>
+            <h4 className="font-medium text-2xl">
+              Subscribe to our Newsletter
+            </h4>
+            <p className="py-4">
+              If you want to follow our progress on developing what Europeans
+              <br />
+              want and need, done by Europeans.
+            </p>
+          </div>
+          <div className="p-8">
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              className="border border-e-black px-12 py-4 rounded-l focus:inline"
+            />
+            <button className="border border-e-black p-4 rounded-md cursor-pointer bg-white">
+              Subscribe to our Newsletter
+            </button>
+          </div>
         </div>
       </Container>
     </section>
