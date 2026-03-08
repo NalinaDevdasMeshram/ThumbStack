@@ -55,6 +55,19 @@ const Roadmap = () => {
               </div>
             ))}
           </div>
+          <div>
+            <p>Become a supporter and help us on our Journey </p>
+            <button>Read more how to →</button>
+          </div>
+          <div>
+            <h4>Subscribe to our Newsletter</h4>
+            <p>
+              If you want to follow our progress on developing what Europeans
+              want and need, done by Europeans.
+            </p>
+            <input type="text" placeholder="Enter Your Email" />
+            <button>Subscribe to our newsletter</button>
+          </div>
         </div>
       </Container>
     </section>
