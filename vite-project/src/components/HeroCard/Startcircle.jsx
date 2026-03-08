@@ -9,7 +9,7 @@ const StarCircle = ({ count = 12, radius = 120 }) => {
         return (
           <TfiStar
             key={i}
-            className="absolute text-black bg-white"
+            className="absolute text-black text-white"
             style={{
               top: "50%",
               left: "50%",
