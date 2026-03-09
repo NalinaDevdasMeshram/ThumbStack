@@ -9,10 +9,10 @@ const StarCircle = ({ count = 12, radius = 120 }) => {
         return (
           <TfiStar
             key={i}
-            className="absolute text-black text-white right-[300px] bottom-[100px] pointer-events-none"
+            className="absolute text-black text-white right-[300px] bottom-[100px] pointer-events-none md:grid grid-cols-1 hidden"
             style={{
-              top: "50%",
-              left: "50%",
+              top: "-20%",
+              right: "-250%",
               transform: `
                 rotate(${angle}deg)
                 translate(${radius}px)

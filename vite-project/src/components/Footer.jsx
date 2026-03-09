@@ -62,7 +62,11 @@ const Footer = () => {
 
       {/* Background Map */}
       <div className="absolute right-0 bottom-0 opacity-40 pointer-events-none md:grid grid-cols-1 hidden">
-        <img src={Maplink} alt="Europe Map" className="w-[600px]" />
+        <img
+          src={Maplink}
+          alt="Europe Map"
+          className="w-[600px] opacity-20 mix-blend-lighten"
+        />
       </div>
 
       {/* Stars */}

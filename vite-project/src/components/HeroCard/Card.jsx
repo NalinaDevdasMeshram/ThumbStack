@@ -25,7 +25,11 @@ const Card = () => {
             </button>
           </div>
           <div className="absolute right-[150px] bottom-[300px] opacity-20 pointer-events-none">
-            <img src={MapLink} alt="Refresh" className="w-[600px]" />
+            <img
+              src={MapLink}
+              alt="Refresh"
+              className="w-[600px] opacity-20 mix-blend-lighten md:grid grid-cols-1 hidden"
+            />
           </div>
           <div>
             <StarCircle />
