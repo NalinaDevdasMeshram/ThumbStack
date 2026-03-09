@@ -39,7 +39,7 @@ const Roadmap = () => {
     },
   ];
   return (
-    <section>
+    <section className="w-full">
       <Container>
         <h2 className="flex justify-center text-center font-medium text-3xl">
           Our Road to Creating Data <br />
@@ -50,7 +50,7 @@ const Roadmap = () => {
             {DataStage.map((item, index) => (
               <div
                 key={index}
-                className={`grid grid-cols-12 items-center gap-6 px-4 py-2 rounded-2xl border-b
+                className={`grid grid-cols-12 items-center gap-6 px-4 py-2 m-8 rounded-2xl border-b
                      ${item.highlight ? "bg-[#F1FF66] border-none" : "border-gray-300"}`}
               >
                 {/* Stage */}
@@ -63,26 +63,25 @@ const Roadmap = () => {
                   {item.title}
                 </div>
                 {/* Description */}
-                <div className="col-span-4 text-sm text-gray-600">
+                <div className="col-span-4 text-medium text-gray-600">
                   {item.description}
                 </div>
                 {/* Action */}
                 <div className="col-span-3 flex justify-end items-center gap-4">
                   {item.buttonText && (
-                    <button className="border px-4 py-2 rounded-md text-sm hover:bg-black hover:text-white transition">
+                    <button className="px-4 py-2 rounded-md text-medium hover:bg-black hover:text-white transition">
                       {item.buttonText}
                     </button>
                   )}
                   {item.status && (
                     <span className="text-sm text-gray-400">{item.status}</span>
                   )}
-                  <span className="text-xl">→</span>
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <div className="text-[#242424] bg-[#EBEAE6] px-10 py-16 text-center text-xl font-bold">
+        <div className="text-[#242424] bg-[#EBEAE6] px-10 py-16 text-center text-xl font-bold w-full">
           <p>Become a supporter and help us on our Journey</p>
           <button className="border border-black-300 rounded-md cursor-pointer hover:bg-[#eaebda] px-10 py-4 m-10 text-sm">
             Read more about how to →
